@@ -1,0 +1,65 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  body {
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: 0;
+    background-color: rgba(39, 109, 171, 0.578);
+  }
+  .kanan {
+    margin-left: 250px;
+    background-color: rgba(255, 228, 196, 0.7);
+  }
+  .topbar {
+    position: fixed;
+    top: 0;
+    height: 64px;
+    width: 100%;
+    background-color: rgba(39, 109, 171, 0.578);
+  }
+  .main {
+    position: relative;
+    top: 64px;
+    width: 100%;
+  }
+  .profil {
+    text-align: center;
+    border-bottom: 1px solid white;
+    margin: 20px 5px 10px 5px;
+    padding-bottom: 10px;
+  }
+  .sidebar > .profil .foto img {
+    border-radius: 50%;
+  }
+  .sidebar > .menu {
+    padding: 0 5px;
+  }
+  .sidebar > .menu > ul > .menu-item {
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .sidebar > .menu > ul > .menu-item > a {
+    display: block;
+    padding: 10px 20px;
+  }
+  .sidebar > .menu > ul > .menu-item:hover {
+    background-color: #ababab;
+  }
+
+  .sidebar>.menu>ul>.menu-item:hover>a>span,
+  .sidebar>.menu>ul>.menu-item:hover>a>span>i{
+    color: black;
+  }
+}
