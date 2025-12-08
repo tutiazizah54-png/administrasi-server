@@ -1,237 +1,119 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Kartu Mahasiswa UNDHARI</title>
+  <meta charset="UTF-8">
+  <title>Admin - Kartu Mahasiswa</title>
 
-<style>
-body{
-  margin:0;
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:#bbb;
-  font-family:Arial, Helvetica, sans-serif;
-}
-
-/* UKURAN KARTU ATM ASLI */
-.card{
-  width:85.6mm;
-  height:53.98mm;
-  background:linear-gradient(90deg,#c57ab2,#f1b5da);
-  border-radius:6mm;
-  position:relative;
-  overflow:hidden;
-  box-shadow:0 4mm 10mm rgba(0,0,0,.35);
-}
-
-/* WATERMARK LOGO */
-.watermark{
-  position:absolute;
-  inset:0;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  opacity:0.15;
-}
-.watermark img{
-  width:28mm;
-}
-
-/* HEADER */
-.header{
-  display:flex;
-  align-items:flex-start;
-  gap:2mm;
-  padding:2mm 3mm;
-  font-size:2.2mm;
-  font-weight:bold;
-  color:black;
-}
-
-.header img{
-  height:6mm;
-}
-
-.header-text{
-  line-height:1.2;
-}
-
-.alamat{
-  font-size:1.8mm;
-  font-weight:normal;
-}
-
-/* GARIS HITAM TIPIS */
-.garis-hitam{
-  width:100%;
-  height:0.3mm;
-  background:black;
-  margin-top:0.4mm;
-}
-
-/* TEKS KARTU DI BAWAH GARIS */
-.kartu-header{
-  font-size:1.9mm;
-  font-weight:bold;
-  color:black;
-  margin-top:0.5mm;
-  letter-spacing:0.5px;
-}
-
-/* ISI */
-.main{
-  display:flex;
-  padding:1mm 3mm;
-}
-
-.left{
-  width:65%;
-}
-
-.name{
-  font-size:3.2mm;
-  font-weight:bold;
-}
-
-.prodi{
-  font-size:2.3mm;
-  margin-top:0.5mm;
-}
-
-.nim{
-  font-size:2.3mm;
-  margin-bottom:2mm;
-}
-
-/* QR */
-.qr{
-  width:14mm;
-  height:14mm;
-  background:white;
-  padding:0.6mm;
-}
-.qr img{
-  width:100%;
-}
-
-/* FOTO */
-.right{
-  width:35%;
-  display:flex;
-  justify-content:flex-end;
-}
-
-.photo{
-  width:18mm;
-  height:24mm;
-  background:white;
-  padding:0.6mm;
-}
-.photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-/* FOOTER */
-.footer{
-  position:absolute;
-  bottom:1.5mm;
-  left:2mm;
-  right:2mm;
-  background:rgba(0,0,0,0.25);
-  text-align:center;
-  padding:1mm;
-}
-
-.slogan-utama{
-  font-size:2.3mm;
-  font-weight:bold;
-  color:white;
-}
-
-.slogan-bawah{
-  font-size:2.2mm;
-  font-weight:bold;
-  color:yellow;
-  margin-top:0.5mm;
-}
-
-/* MODE CETAK */
-@media print{
-  body{
-    background:white;
-  }
-  .card{
-    box-shadow:none;
-    margin:0;
-  }
-}
-</style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="topbar.css">
+  <link rel="stylesheet" href="kartu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-<div class="card">
+<div class="layout">
 
-  <!-- WATERMARK -->
-  <div class="watermark">
-    <img src="logoundhari3.jpg">
-  </div>
-
-  <!-- HEADER -->
-  <div class="header">
-    <img src="logoYaak.png">
-    <img src="logoundhari3.jpg">
-    <div class="header-text">
-      YAYASAN AMANAH AMPAWANG INDAH<br>
-      UNIVERSITAS DHARMAS INDONESIA<br>
-      <span class="alamat">Jl. Lintas Sumatra KM 3, Ampang Kuranji, Padang</span>
-      <div class="garis-hitam"></div>
-      <div class="kartu-header">KARTU TANDA MAHASISWA</div>
+  
+  <div class="sidebar">
+    <div class="profil">
+      <img src="user(1).png">
+      <h3>Tuti Azizah</h3>
+      <p>Admin</p>
     </div>
+
+    <ul class="menu">
+      <li><i class="fas fa-home"></i> Beranda</li>
+      <li><i class="fas fa-user"></i> Profil</li>
+      <li><i class="fas fa-id-card"></i> Kartu Mahasiswa</li>
+      <li><i class="fas fa-chart-bar"></i> Nilai</li>
+      <li><i class="fas fa-sign-out-alt"></i> Logout</li>
+    </ul>
   </div>
 
-  <!-- ISI -->
-  <div class="main">
+  
+  <div class="kanan">
 
-    <!-- KIRI -->
-    <div class="left">
-      <div class="name">TUTI AZIZAH</div>
-      <div class="prodi">S1 TEKNIK INFORMATIKA</div>
-      <div class="nim">2302011021</div>
-
-      <div class="qr">
-        <img id="qr">
+    
+    <div class="topbar">
+      <span>WEB ADMIN</span>
+      <div class="user">
+        <img src="user(1).png">
+        <span>Tuti Azizah</span>
       </div>
     </div>
 
-    <!-- KANAN -->
-    <div class="right">
-      <div class="photo">
-        <img src="poto.png">
+    
+    <div class="main">
+
+      <h1 class="judul-halaman">Kartu Tanda Mahasiswa</h1>
+
+      <div class="container-kartu">
+
+        <div class="kartu-mahasiswa">
+
+          
+          <div class="watermark">
+            <img src="logo-universitas.png">
+          </div>
+
+        
+          <div class="kartu-header">
+
+            
+            <img src="logoYaak.png" class="logo">
+
+           
+            <div class="logo-univ-text">
+              <img src="logo-universitas.png" class="logo">
+
+              <div class="teks-samping">
+                <h3>YAYASAN AMANAH AMPANG KURANJI</h3>
+                <h2>UNIVERSITAS DHARMAS INDONESIA</h2>
+              </div>
+            </div>
+
+          </div>
+
+          
+          <p class="alamat tengah">
+            Jl. Lintas Sumatra km. 18 kecamatan Koto Baru Dharmasraya Sumatra Barat
+          </p>
+
+          
+          <p class="judul-kartu tengah">KARTU TANDA MAHASISWA</p>
+
+          
+          <div class="kartu-body">
+
+            <div class="data-mahasiswa">
+              <div class="data-item"> Tuti Azizah</div>
+              <div class="data-item">S1 Teknik Informatika</div>
+              <div class="data-item">230201021</div>
+
+              <div class="qr-code">
+                <img src="Qr_code.jpg">
+              </div>
+            </div>
+
+            <div class="foto-mahasiswa">
+              <img src="poto.png">
+            </div>
+
+          </div>
+
+          
+          <div class="kartu-footer">
+            <p class="motto">BERPACU WAKTU MENJAGA MUTU</p>
+            <p class="tagline">JAYALAH UNDHARI</p>
+          </div>
+
+        </div>
       </div>
     </div>
-
   </div>
-
-  <!-- FOOTER -->
-  <div class="footer">
-    <div class="slogan-utama">BERPACU WAKTU MENJAGA MUTU</div>
-    <div class="slogan-bawah">JAYALAH UNDHARI</div>
-  </div>
-
 </div>
-
-<script>
-const nama = "TUTI AZIZAH";
-const nim  = "2302011021";
-
-const isiQR = `${nama} | ${nim} | UNDHARI`;
-document.getElementById("qr").src =
-  `https://chart.googleapis.com/chart?cht=qr&chs=140x140&chl=${encodeURIComponent(isiQR)}`;
-</script>
 
 </body>
 </html>
