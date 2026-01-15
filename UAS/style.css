@@ -5,37 +5,7 @@ body {
   color: #2fffdc;
 }
 
-/* ================= SOAL NO 1 ================= */
-.static {
-  position: static;
-  background: lightgray;
-  padding: 10px;
-}
 
-.relative {
-  position: relative;
-  top: 10px;
-  left: 10px;
-  background: lightblue;
-  padding: 10px;
-}
-
-.container {
-  position: relative;
-  border: 2px solid black;
-  height: 100px;
-  margin-bottom: 20px;
-}
-
-.absolute {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: lightcoral;
-  padding: 10px;
-}
-
-/* ================= SOAL NO 2 ================= */
 #box {
   width: 120px;
   height: 120px;
@@ -43,7 +13,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* ================= SOAL NO 4 ================= */
+
 input {
   padding: 10px;
   margin-right: 10px;

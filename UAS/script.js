@@ -1,16 +1,16 @@
-// ================= SOAL NO 2 =================
+
 function ubahWarna() {
   document.getElementById("box").style.backgroundColor = "blue";
 }
 
-// ================= SOAL NO 3 =================
+
 function tambahElemen() {
   let p = document.createElement("p");
   p.textContent = "Ini elemen baru dari JavaScript";
   document.body.appendChild(p);
 }
 
-// ================= SOAL NO 4 =================
+
 function hitung(operator) {
   let a = parseFloat(document.getElementById("angka1").value);
   let b = parseFloat(document.getElementById("angka2").value);
