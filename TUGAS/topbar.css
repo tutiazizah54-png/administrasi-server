@@ -1,0 +1,17 @@
+.topbar {
+  background: #5a1465;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: white;
+}
+
+.topbar img {
+  width: 32px;
+  border-radius: 50%;
+  position: relative;
+  top: -5px;   
+}
+

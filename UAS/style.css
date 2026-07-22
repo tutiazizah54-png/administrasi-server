@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: radial-gradient(circle, #333, #000);
+  color: #2fffdc;
+}
+
+
+#box {
+  width: 120px;
+  height: 120px;
+  background: red;
+  margin-bottom: 10px;
+}
+
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #2fffdc;
+  background: transparent;
+  color: white;
+}
+
+.btn-group {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tambah { background: #ff5f5f; color: white; }
+.kurang { background: #4caf50; color: white; }
+.kali   { background: #2196f3; color: white; }
+.bagi   { background: #9c27b0; color: white; }
+
+.reset { background: #607d8b; color: white; }
+.clear { background: orange; color: black; }
+
+#history {
+  margin-top: 20px;
+  background: #2fffdc;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 120px;
+}
