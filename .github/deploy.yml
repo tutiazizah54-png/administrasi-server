@@ -15,5 +15,5 @@ jobs:
 
       - name: Sinkronisasi File ke Folder Web Server
         run: |
-          rsync -avz --exclude='.git' --exclude='.github' ./ /var/www/wp1/
-          echo "Deployment Berhasil ke /var/www/automation_push menggunakan Runner lokal!"
+          rsync -avz --exclude='.git' --exclude='.github' ./ /var/www/WP1/
+          echo "Deployment Berhasil ke /var/www/WP1 menggunakan Runner lokal!"
